@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practices</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        h3{            
+            word-break: break-all;
+        }
+        .container{
+            padding:20px;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left:-15px;
+            margin-right:-15px;
+        }
+        .col{
+            padding:15px;
+            flex:1 1 50%;
+            display:flex;
+        }
+        .box{
+            background:lightsteelblue;
+            color:black;
+            padding:20px;
+            border-radius: 8px;
+            font-size: 20px;
+            width:100%;
+        }
+        input{
+            padding:10px;
+            height:40px;
+            width:100%;
+            font-size: 16px;
+            margin-bottom:20px;
+        }
+        @media (max-width: 991px){            
+            .col{
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- ২৪. তোমার কাছে: ৮০০০০ টাকার বেশি হলে তুমি mac কিনবে, ৬০ টাকার বেশি হলে gaming ল্যাপটপ কিনবে, ৪০ হাজার টাকার বেশি হলে lenovo yoga কম্পিউটার কিনবে , ২০ হাজার টাকার বেশি হলে পুরান ল্যাপটপ কিনবে। না হয় তুমি মোবাইল দিয়ে কাজ চালাবে।  -->
+                <div class="box">
+                    <h2>২৪. তোমার কাছে: ৮০০০০ টাকার বেশি হলে তুমি mac কিনবে, ৬০ টাকার বেশি হলে gaming ল্যাপটপ কিনবে, ৪০ হাজার টাকার বেশি হলে lenovo yoga কম্পিউটার কিনবে , ২০ হাজার টাকার বেশি হলে পুরান ল্যাপটপ কিনবে। না হয় তুমি মোবাইল দিয়ে কাজ চালাবে।</h2>
+                    <input id="lpPrice" type="number" placeholder="input the price...">
+                    <div>Result: <b><span id="laptopResult">_______</span></b></div>
+                </div>
+            </div>
+            <div class="col">
+                <!-- ২৫. আসকে আমার মন ভালো নেই -- এই কথা ৩৯ বার আউটপুট হিসেবে দেখাও।   -->
+                <div class="box">
+                    <h2>২৫. আসকে আমার মন ভালো নেই -- এই কথা ৩৯ বার আউটপুট হিসেবে দেখাও। </h2>
+                    <div id="mindNotWell"></div>
+                </div>
+            </div>
+            <div class="col">
+                <!-- ২৯. একটা কোড লিখে ৫৮ থেকে ৯৮ পর্যন্ত যত সংখ্যা আছে সেগুলাকে দেখাও  -->
+                <div class="box">
+                    <h2>২৯. একটা কোড লিখে ৫৮ থেকে ৯৮ পর্যন্ত যত সংখ্যা আছে সেগুলাকে দেখাও</h2>
+                    <div id="numbdf58To98"></div>
+                </div>
+            </div>
+            <div class="col">
+                <!-- ৩০.একটা কোড লিখে ৪১২ থেকে ৪৫৬ পর্যন্ত যত জোর সংখ্যা আছে সেগুলাকে দেখাও   -->
+                <div class="box">
+                    <h2>৩০.একটা কোড লিখে ৪১২ থেকে ৪৫৬ পর্যন্ত যত জোর সংখ্যা আছে সেগুলাকে দেখাও </h2>
+                    <div id="numberEven"></div>
+                </div>
+            </div>
+            <div class="col">
+                <!-- ৩১. একটা কোড লিখে ৫৮১ থেকে ৬২৩ পর্যন্ত যত বিজোড় সংখ্যা আছে সেগুলাকে দেখাও  -->
+                <div class="box">
+                    <h2>৩১. একটা কোড লিখে ৫৮১ থেকে ৬২৩ পর্যন্ত যত বিজোড় সংখ্যা আছে সেগুলাকে দেখাও</h2>
+                    <div id="numberOdd"></div>
+                </div>
+            </div>
+            <div class="col">
+                <!-- ৩৫. একটা ফর লুপ চালাও। ৩০ থেকে ৮৬ পর্যন্ত। আর এই লুপ ৪৪ এ গেলে ব্রেক করবে। সেই জিনিস কোড করে দেখাও  -->
+                <div class="box">
+                    <h2>৩৫. একটা ফর লুপ চালাও। ৩০ থেকে ৮৬ পর্যন্ত। আর এই লুপ ৪৪ এ গেলে ব্রেক করবে। সেই জিনিস কোড করে দেখাও</h2>
+                    <div id="numberBreak"></div>
+                </div>
+            </div>
+            <div class="col">
+                <!-- ৩৬. তোমার যত বই আছে সেগুলার দাম নিয়ে একটা array লিখে ফেলো। যে বই গুলোর দাম ২০০ টাকার উপরে সেগুলাকে স্কিপ করবে। অর্থাৎ সেগুলাকে আউটপুট হিসেবে দেখাবে না। বাকিদের কে আউটপুট হিসেবে দেখাবে। দেখো করতে পারো কিনা। -->
+                <div class="box">
+                    <h2>৩৬. তোমার যত বই আছে সেগুলার দাম নিয়ে একটা array লিখে ফেলো। যে বই গুলোর দাম ২০০ টাকার উপরে সেগুলাকে স্কিপ করবে। অর্থাৎ সেগুলাকে আউটপুট হিসেবে দেখাবে না। বাকিদের কে আউটপুট হিসেবে দেখাবে। দেখো করতে পারো কিনা।</h2>
+                    <h3>The Books price Array: [50,230,200,80,400,190,125,700,145,90,201,39,388,99,599]</h3>
+                    <div id="numberSkip"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
